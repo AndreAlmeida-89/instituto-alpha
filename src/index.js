@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "styled-components";
-import * as theme from './config/theme'
+import * as theme from "./config/theme";
+import Reset from "./styles/generic/Reset";
+import { Base } from "./styles/elements/Base";
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
+    <Reset />
+    <Base />
     <App />
   </ThemeProvider>,
 
